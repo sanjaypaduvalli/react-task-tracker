@@ -5,7 +5,7 @@ import { useLocation } from 'react-router'
 
 const Header = (props) => {
 
-
+//THis is to know the location of the route 
   const fromPath = useLocation()
     return (
         <header className="header">

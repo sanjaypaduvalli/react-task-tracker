@@ -1,3 +1,22 @@
 {
-  "tasks": []
+  "tasks": [
+    {
+      "name": "Test",
+      "day": "sdf",
+      "reminder": false,
+      "id": 1
+    },
+    {
+      "name": "Test2",
+      "day": "fdgfdg",
+      "reminder": false,
+      "id": 2
+    },
+    {
+      "name": "dfgdg",
+      "day": "dfgdfg",
+      "reminder": false,
+      "id": 3
+    }
+  ]
 }

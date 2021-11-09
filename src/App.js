@@ -15,6 +15,7 @@ import {Footer} from './Components/Footer'
 import {About} from './Components/About'
 
 import { useContext } from 'react'
+import { NotFoundPage } from './Components/NotFoundPage'
 //import './App.css'
 
 //Export the Context here , so that we can access in the child comtext
@@ -140,6 +141,7 @@ return previ.map((task)=>
 <Route path="/about" component={About}/>
 
 
+
 {/*We wrap the context here.*/}
 <GlobalContext.Provider value="Sanjay"> 
 <Footer />
@@ -151,23 +153,28 @@ return previ.map((task)=>
         <ReactState/>
           <TestComp/> */}
 
-{/*Below is realted  
+{/* 
           <div style={{border:"1px solid red"}}>
               <p>Test styles</p>
           <Router>
               <Switch>
-                  <Route path="/test" >
+                 {/**  This is how we access the data , Ie . id we access it, Same thing we need to use it on the Component}
+                  
+              <Route exact path="/test/:id" >
                 <TestRoutes/>
                   </Route>
                   <Route path="/test1" component={TestRoutes1} />
                   <Route path="/about" component={About} />
               </Switch>
-           <p>   <Link to="test">Link test</Link> </p>
-              <Link to="test1">Link test 1</Link>
+              {/**  Below is way how we pass data to the componet via Route}
+           <p>   <Link to="/test/34">Router with param pass</Link> </p>
+              <Link to="/test1">Link test 1</Link>
             <p>  <Link to="about">About </Link></p>
               </Router>
           </div>
-      */}   
+
+        **/}
+
         </div>
     )
 
